@@ -17,29 +17,26 @@
 
         <ImageView
             android:id="@+id/artist_menu"
+            style="@style/menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
-            android:src="@drawable/artists" />
+            android:contentDescription="@string/artist_menu"
+            android:src="@drawable/artists_activ" />
 
         <ImageView
             android:id="@+id/songs_menu"
+            style="@style/menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
+            android:contentDescription="@string/song_menu"
             android:src="@drawable/songs" />
 
         <ImageView
             android:id="@+id/play_menu"
+            style="@style/menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
+            android:contentDescription="@string/play_menu"
             android:src="@drawable/play_menu" />
 
 
@@ -57,44 +54,43 @@
 
             <ImageView
                 android:id="@+id/evanescence_cover"
+                style="@style/imageStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:adjustViewBounds="true"
-                android:cropToPadding="true"
-                android:src="@drawable/evanescence"
-                android:contentDescription="Evanescence" />
+                android:contentDescription="@string/evanescence"
+                android:src="@drawable/evanescence" />
+
             <ImageView
                 android:id="@+id/enrique_cover"
+                style="@style/imageStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:adjustViewBounds="true"
-                android:cropToPadding="true"
-                android:src="@drawable/enrique"
-                android:contentDescription="Enrique Iglesias" />
+                android:contentDescription="@string/enrique"
+                android:src="@drawable/enrique" />
+
             <ImageView
                 android:id="@+id/abba_cover"
+                style="@style/imageStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:adjustViewBounds="true"
-                android:cropToPadding="true"
-                android:src="@drawable/abba"
-                android:contentDescription="ABBA" />
+                android:contentDescription="@string/abba"
+                android:src="@drawable/abba" />
+
             <ImageView
                 android:id="@+id/desmod_cover"
+                style="@style/imageStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:adjustViewBounds="true"
-                android:cropToPadding="true"
-                android:src="@drawable/desmod"
-                android:contentDescription="Desmod" />
+                android:contentDescription="@string/desmod"
+                android:src="@drawable/desmod" />
+
             <ImageView
                 android:id="@+id/bryan_cover"
+                style="@style/imageStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:adjustViewBounds="true"
-                android:cropToPadding="true"
-                android:src="@drawable/bryan"
-                android:contentDescription="Bryan Adams" />
+                android:contentDescription="@string/bryan"
+                android:src="@drawable/bryan" />
 
         </LinearLayout>
 

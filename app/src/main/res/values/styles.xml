@@ -8,4 +8,15 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="menu">
+        <item name="android:layout_marginTop">@dimen/menu_margins</item>
+        <item name="android:layout_marginBottom">@dimen/menu_margins</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="imageStyle">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:cropToPadding">true</item>
+    </style>
+
 </resources>

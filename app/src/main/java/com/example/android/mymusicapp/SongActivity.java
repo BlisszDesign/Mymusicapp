@@ -17,8 +17,7 @@ public class SongActivity extends AppCompatActivity {
     public String length;
     private ImageView artistMenu;
     private ImageView artistCover;
-    final Bundle songs = new Bundle();
-    final Bundle timer = new Bundle();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +25,6 @@ public class SongActivity extends AppCompatActivity {
         setContentView(R.layout.artist_tracks);
         Bundle extras = getIntent().getExtras();
         artist = extras.getString("artist");
-        song = songs.getString("songName");
-        length = timer.getString("trackLength");
         artistMenu = (ImageView) findViewById(R.id.artist_menu);
 
         ArrayList<Song> songs = new ArrayList<Song>();
@@ -89,27 +86,16 @@ public class SongActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
 
-        //set a click listener for songsMenu
+        //set a click listener for artistMenu
         artistMenu.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the songs menu image is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the SongActivity
-                Intent songsMenuIntent = new Intent(SongActivity.this, MainActivity.class);
-                startActivity(songsMenuIntent);
+                // Create a new intent to open the MainActivity
+                Intent artistMenuIntent = new Intent(SongActivity.this, MainActivity.class);
+                startActivity(artistMenuIntent);
             }
         });
-
-      /*  //set a click listener for playMenu
-        playMenu.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the play menu image is clicked on.
-            @Override
-            public void onClick(View view) {
-                // Create a new intent to open the PlayActivity
-                Intent playMenuIntent = new Intent(SongActivity.this, PlayActivity.class);
-                startActivity(playMenuIntent);
-            }
-        });*/
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

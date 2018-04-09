@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">My music app</string>
+    <string name="artist_menu">Artist</string>
+    <string name="song_menu">Tracks</string>
+    <string name="play_menu">Play</string>
+    <string name="evanescence">Evanescence</string>
+    <string name="enrique">Enrique Iglesias</string>
+    <string name="abba">ABBA</string>
+    <string name="desmod">Desmod</string>
+    <string name="bryan">Bryan Adams</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="seek_bar">Track progress</string>
 </resources>

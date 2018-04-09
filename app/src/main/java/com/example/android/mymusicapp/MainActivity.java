@@ -21,32 +21,31 @@ public class MainActivity extends AppCompatActivity {
         abba = (ImageView) findViewById(R.id.abba_cover);
         desmod = (ImageView) findViewById(R.id.desmod_cover);
         bryan = (ImageView) findViewById(R.id.bryan_cover);
-       final Bundle extras = new Bundle();
 
 
         //set a click listener for artists
         evanescence.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent evanescenceIntent = new Intent (MainActivity.this, SongActivity.class);
+                Intent evanescenceIntent = new Intent(MainActivity.this, SongActivity.class);
                 artist = "Evanescence";
-               evanescenceIntent.putExtra("artist", artist);
+                evanescenceIntent.putExtra("artist", artist);
                 startActivity(evanescenceIntent);
             }
         });
         enrique.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent enriqueIntent = new Intent (MainActivity.this, SongActivity.class);
+                Intent enriqueIntent = new Intent(MainActivity.this, SongActivity.class);
                 artist = "Enrique Iglesias";
-               enriqueIntent.putExtra("artist", artist);
+                enriqueIntent.putExtra("artist", artist);
                 startActivity(enriqueIntent);
             }
         });
         abba.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent abbaIntent = new Intent (MainActivity.this, SongActivity.class);
+                Intent abbaIntent = new Intent(MainActivity.this, SongActivity.class);
                 artist = "ABBA";
                 abbaIntent.putExtra("artist", artist);
                 startActivity(abbaIntent);
@@ -55,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         desmod.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent desmodIntent = new Intent (MainActivity.this, SongActivity.class);
+                Intent desmodIntent = new Intent(MainActivity.this, SongActivity.class);
                 artist = "Desmod";
                 desmodIntent.putExtra("artist", artist);
                 startActivity(desmodIntent);
@@ -64,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         bryan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent bryanIntent = new Intent (MainActivity.this, SongActivity.class);
+                Intent bryanIntent = new Intent(MainActivity.this, SongActivity.class);
                 artist = "Bryan Adams";
                 bryanIntent.putExtra("artist", artist);
                 startActivity(bryanIntent);

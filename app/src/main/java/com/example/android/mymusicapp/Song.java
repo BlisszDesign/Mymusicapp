@@ -6,7 +6,7 @@ public class Song {
     private String mTrackLength;
     private int mImageResourceId;
 
-    public Song (String artistName, String songTitle, String trackLength, int imageResourceId) {
+    public Song(String artistName, String songTitle, String trackLength, int imageResourceId) {
         mArtistName = artistName;
         mSongTitle = songTitle;
         mTrackLength = trackLength;
