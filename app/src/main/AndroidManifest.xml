@@ -17,8 +17,12 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".PlayActivity"/>
-        <activity android:name=".SongActivity"/>
+        <activity
+            android:name=".PlayActivity"
+            android:label="Play Now"></activity>
+        <activity
+            android:name=".SongActivity"
+            android:label="Track list"></activity>
     </application>
 
 </manifest>
